@@ -15,3 +15,10 @@ label {
 
     display: flex
 }
+
+#tosText {
+    display:none;
+    width: 400px;
+    height: 300px;
+    overflow: scroll;
+}
