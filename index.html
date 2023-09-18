@@ -9,8 +9,16 @@
 
 function showtos() {
   
-  document.getElementById('tosText')
-      .style.display = "block";
+  let tosT = document.getElementById('tosText');
+
+  if(tosT.style.display=== "none")
+{
+tosT.style.display = "block";
+}
+else
+{
+tosT.style.display="none";
+}
 }
 
 </script>
