@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Registration Form</title>
 </head>
 <body>
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
+    <form method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset class="">
+            <label for="fname">Enter your precious First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Fergus">
+            <label for="lname">Enter your precious Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Maracuia">
+            <label for="email">Enter your glorious email:</label>
+            <input type="email" id="email" name ="email">
+            <label for="passw">Create a complicated password:</label>
+            <input type="password" id="passw" name="passw">
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="accType">Account Type:</label>
+            <div class="accountCheck">
+            <input type="radio" id="myAcc" name="accType" value="myAcc">
+            <label for="myAcc">My Own Awesome Account</label>
+        </div>
+        <div class="accountCheck">
+            <input type="radio" id="bussAcc" name="accType" value="bussAcc">
+            <label for="bussAcc">The Account of my Amazing Business</label>
+        </div>
+        </div>
+        </fieldset>
 
+
+
+
+    </form>
 
 
 </body>
