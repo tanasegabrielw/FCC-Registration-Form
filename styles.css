@@ -1,8 +1,18 @@
-body {
+*{
 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+body {
+    
     margin:0;
     width: 100%;
     height: 100vh;
+    background-color: #000022;
+    color: #E1FAF9;
+
 }
 
 label {
@@ -13,7 +23,7 @@ label {
 
 .accountCheck{
 
-    display: flex
+    display: flex;
 }
 
 #tosText {
@@ -21,4 +31,112 @@ label {
     width: 400px;
     height: 200px;
     overflow: scroll;
+}
+
+a {
+
+    text-decoration: none;
+    color:#E28413;
+    font-weight: 500;
+}
+
+a:hover{
+
+    color: #DE3C4B;
+    font-weight: bolder;
+}
+
+h1,p {
+
+    text-align: center;
+}
+
+form {
+
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+
+    border: none;
+
+}
+
+input[type=file]::file-selector-button 
+{
+
+    background-color:#DE3C4B;
+    cursor:pointer;
+    border:none;
+    margin-right: 20px;
+    color:#E1FAF9;
+    border-radius: 20%;
+    padding:10px 20px;
+}
+
+input[type=file] {
+
+padding:5px;
+border-radius: 10px;
+color:black;
+
+}   
+
+input[type=file]::file-selector-button:hover{
+
+    font-weight: bolder;
+    border:#E1FAF9 1px solid;
+}
+
+textarea, select, input{
+
+    background-color: #E28413;
+    color:#E1FAF9;
+    border:none;
+    border-radius: 5px;
+}
+
+ input:hover{
+
+    border:#E1FAF9 1px solid;
+
+}
+::placeholder{
+
+    color:lightgray;
+}
+
+input[type=text], input[type=email], input[type=password],textarea,select{
+
+    width: 100%;
+    padding:5px 10px;
+}
+
+input[type=submit]{
+
+    padding: 10px 40px;
+    font-size: 1.1em;    
+    width: 60%;
+    margin:1em auto;
+    min-width: 300px;
+    display: block;
+}
+
+input[type=submit]:hover{
+
+    font-weight: bolder;
+    color:#DE3C4B;
+    border:#E1FAF9 1px solid;
+    font-size: larger;
+    
+}
+
+label {
+
+    padding: 2px 1px;
+
 }

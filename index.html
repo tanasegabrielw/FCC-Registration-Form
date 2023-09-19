@@ -26,9 +26,12 @@ tosT.style.display="none";
 </head>
 
 <body>
+
+    <div class="upperBox">
     <h1>Registration Form</h1>
-    <p>Please be kind and fill out this form with the required information :D</p>
-    <form method="post" action="https://register-demo.freecodecamp.org">
+    <p>Please be kind and fill out this form with the required information:</p>
+</div>
+      <form method="post" action="https://register-demo.freecodecamp.org">
         <fieldset class="">
             <label for="fname">Enter your precious <strong>First Name</strong>:</label>
             <input type="text" id="fname" name="fname" placeholder="Fergus" required>
@@ -75,7 +78,7 @@ tosT.style.display="none";
     Ut sem ipsum, aliquet ullamcorper enim eu, bibendum dapibus velit. Aenean nec velit ultrices, pharetra ipsum a, faucibus nisi. Aliquam magna arcu, molestie mattis vulputate vel, fermentum nec risus. Mauris ornare odio eget sapien ultricies ultricies. Maecenas elit mauris, porttitor nec lacinia eu, lobortis sed turpis. Nulla eget varius ligula. Nam aliquam enim vel scelerisque rhoncus. Mauris tristique ullamcorper convallis. Phasellus tempus, mi consequat dapibus scelerisque, sem nunc aliquet nisi, commodo dictum ante risus vitae libero.
     </div>
     </div>
-        </div>
+
         </fieldset>
         <fieldset>
 <label for="profilepic">Upload a cute profile picture</label>
@@ -86,6 +89,7 @@ tosT.style.display="none";
 
 <label for="aboutUsWhere">Where did you hear about our awesome services?</label>
 <select id="aboutUsWhere" name="aboutUsWhere">
+<option>(Select one)</option>
 <option>A little birdy told me</option>
 <option>A dragon spewed fire on a rock and I saw the name</option>
 <option>Santa Clause told me in my dreams</option>
@@ -93,17 +97,14 @@ tosT.style.display="none";
 </select>
 
 <label for="bio">Provide a short story about you:</label>
-<input type="text" id="text" name="text">
+<textarea id="text" name="text" rows="3" cols="30" placeholder="If I were a boy..."></textarea> 
 
 
 
-        </fieldset>
+</fieldset>
 
 
-
-
-    </form>
-
-
+<input type="submit" value="Submit">
+</form>
 </body>
 </html>
